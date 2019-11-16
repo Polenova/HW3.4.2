@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HW3.3.2</string>
+    <string name="text_en">Hello, world!</string>
+    <string name="text_ru">Здравствуй, мир!</string>
+    <string-array name="language">
+        <item>Pусский</item>
+        <item>English</item>
+    </string-array>
+</resources>
