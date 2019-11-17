@@ -2,8 +2,10 @@
     <string name="app_name">HW3.3.2</string>
     <string name="text_en">Hello, world!</string>
     <string name="text_ru">Здравствуй, мир!</string>
+    <string name="text_srb">Здраво, свет!</string>
     <string-array name="language">
-        <item>Pусский</item>
+        <item>Русский</item>
+        <item>Србски</item>
         <item>English</item>
     </string-array>
 </resources>

@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button buttonOK;
     private Spinner spinnerLanguage;
+    Locale locale;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,11 +27,19 @@ public class MainActivity extends AppCompatActivity {
         buttonOK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    Locale locale = new Locale("en");
-                    Configuration config = new Configuration();
-                    config.setLocale(locale);
-                    getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
-                    recreate();
+                Object language = spinnerLanguage.getSelectedItem();
+                String stringLang = language.toString();
+                if ("Србски".equals(stringLang)) {
+                    locale = new Locale("sr");
+                } else if ("English".equals(stringLang)) {
+                    locale = new Locale("en");
+                } else if ("Русский".equals(stringLang)) {
+                    locale = new Locale("ru");
+                }
+                Configuration config = new Configuration();
+                config.setLocale(locale);
+                getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+                recreate();
             }
         });
     }
