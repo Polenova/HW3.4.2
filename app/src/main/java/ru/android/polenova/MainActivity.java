@@ -5,11 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 import java.util.Locale;
 
@@ -17,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button buttonOK;
     private Spinner spinnerLanguage;
-    Locale locale;
+    private Locale locale;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,12 +27,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Object language = spinnerLanguage.getSelectedItem();
                 String stringLang = language.toString();
-                if ("Србски".equals(stringLang)) {
-                    locale = new Locale("sr");
-                } else if ("English".equals(stringLang)) {
-                    locale = new Locale("en");
-                } else if ("Русский".equals(stringLang)) {
-                    locale = new Locale("ru");
+                switch (stringLang) {
+                    case "Србски":
+                        locale = new Locale("sr");
+                        break;
+                    case "English":
+                        locale = new Locale("en");
+                        break;
+                    case "Русский":
+                        locale = new Locale("ru");
+                        break;
                 }
                 Configuration config = new Configuration();
                 config.setLocale(locale);
