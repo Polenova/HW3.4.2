@@ -7,13 +7,19 @@
     <color name="colorPrimaryGreen">#2E8B57</color>
     <color name="colorPrimaryDarkGreen">#006400</color>
     <color name="colorAccentGreen">#6B8E23</color>
+    <color name="colorBackgroundGreen">#5ECAE78F</color>
 
     <color name="colorPrimaryBlue">#0394D5</color>
     <color name="colorPrimaryDarkBlue">#016592</color>
     <color name="colorAccentBlue">#0193A7</color>
+    <color name="colorBackgroundBlue">#B7C0EFF5</color>
 
-    <color name="colorPrimaryBlack">#A8020202</color>
+
+    <color name="colorPrimaryBlack">#666666</color>
     <color name="colorPrimaryDarkBlack">#000000</color>
-    <color name="colorAccentBlack">#60030303</color>
+    <color name="colorAccentBlack">#030303</color>
+    <color name="colorBackgroundBlack">#41000000</color>
+    <color name="colorTextBlackWhite">#FFFFFF</color>
+
 
 </resources>
