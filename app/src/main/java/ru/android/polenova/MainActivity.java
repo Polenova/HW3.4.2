@@ -42,15 +42,16 @@ public class MainActivity extends AppCompatActivity {
                 config.setLocale(locale);
                 getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
                 recreate();
+                String stringTheme = spinnerTheme.getSelectedItem().toString();
                 switch (spinnerTheme.getSelectedItem().toString()) {
-                    case "Green":
-                        Utils.changeToTheme(MainActivity.this, Utils.THEME_GREEN);
+                    case "Маленький":
+                        Utils.changeToTheme(MainActivity.this, Utils.THEME_SMALL);
                         break;
-                    case "Black":
-                        Utils.changeToTheme(MainActivity.this, Utils.THEME_BLACK);
+                    case "Средний":
+                        Utils.changeToTheme(MainActivity.this, Utils.THEME_MEDIUM);
                         break;
-                    case "Blue":
-                        Utils.changeToTheme(MainActivity.this, Utils.THEME_BLUE);
+                    case "Большой":
+                        Utils.changeToTheme(MainActivity.this, Utils.THEME_BIG);
                         break;
                 }
             }
