@@ -1,9 +1,14 @@
 <resources>
-    <string name="title">HW3.3.2</string>
+    <string name="title">HW3.4.1</string>
     <string name="text" translatable="false">Hello, world!</string>
     <string-array name="language">
         <item>Русский</item>
         <item>Србски</item>
         <item>English</item>
+    </string-array>
+    <string-array name="Theme">
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Black</item>
     </string-array>
 </resources>
